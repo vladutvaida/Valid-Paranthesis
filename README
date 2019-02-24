@@ -1,0 +1,35 @@
+La functia de pop mi-am luat o variabila de tip TLG care sa pointeze catre
+varful stivei si dupa am sters lista din varf.La fel am facut si la extrq.
+La functia de push si intrq am introdus o lista la inceputul stivei,respectiv
+cozii.Functiile top si Top le-am folosit pentru a afisa tipul parantezei din 
+varful stivei,respectiv id_ul parantezei.Functiile front si Front le-am folosit
+pentru a afisa tipul parantezei din inceputul stivei respectiv id-ul stivei.
+La functia de afisare a stivei m-am folosit de o stiva auxiliara in care am 
+rasturnat elementele.Dupa din stiva auxiliara am afisat paranteza din varf 
+si in acelasi timp am reintrodus in stiva initiala.La functia de afisare a 
+cozii,m-am folosit de o coada auxiliara in care am introdus elementele.Apoi
+am afisat paranteza de la inceputul cozii,dupa am reintrodus elementele in
+coada intitiala.
+La functia de sortare la stive,m-am folosit de 2 stive auxiliare S si S1 
+in asa fel incat in Stiva S sa fie toate elementele in ordine decrescatoare 
+de la baza la varf,S1-ul l-am folosit ca sa ma ajute in aceasta operatie in sensul
+ca in momentul in care se introduce un element in stiva S din stiva s 
+celelalte elemente mai mici ca el se duc in stiva S1,iar din S1 din nou in s 
+si tot asa pana se umple stiva S si tot asa si ulterior din aceasta stiva sa
+dau push fiecarui varf in stiva initiala,astfel incat in stiva initiala sa
+fie elementele in ordine crescatoare de la baza la varf.La functia de sortare
+la cozi,m-am folosit la fel de 2 stive auxiliare S si S1 in asa fel incat in 
+Stiva S sa fie elementele in ordine si am urmat exact acelasi algoritm ca cel
+de la sortari de stive.
+La functia de corrects,respectiv correctq am pus elemente intr-o stiva auxiliara S1.
+Mi-am luat o alta stiva auxiliara,S2, in care am introdus -1.Primul element din stiva
+e folosit pentru a reprezenta baza urmatorului sir valid.Daca ultima paranteza din stiva
+S1 este '{' '[' '(' introducem in S2 indexul parantezei si in S3 paranteza respectiva.
+Daca ultima paranteza din stiva S1 se inchide iar prima paranteza din S3 se deschide cu
+cea care se inchide din S1 atunci dam pop la S2 si la S3,iar daca ultima paranteza din 
+S3 nu respecta cele doua conditii de mai sus atunci se va introduce in S3 si indexul
+parantezei din S1 se va introduce in S2.Daca la finalul unei operatii iteratii stackul
+S2 este gol iar rezultatul este mai mic decat diferenta dintre indexul parantezei curente
+si elementul din varful stivei S2,acesta se va actualiza cu diferenta dintre index si
+elementul din varful stivei.La aceste doua operatii trebuie sa recunosc ca m-am inspirat de
+pe net ca altfel nu stiam cum sa le fac.:))
